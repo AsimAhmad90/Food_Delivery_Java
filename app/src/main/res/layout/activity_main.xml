@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.asim.darewrofyp.MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|textVisiblePassword"
+        android:textSize="20sp"
+        android:ems="10"
+        android:hint="Email"
+        android:textColor="@color/Yellow"
+        android:textColorHint="@color/Yellow"
+        android:id="@+id/etemail"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:textColor="@color/Yellow"
+        android:textColorHint="@color/Yellow"
+        android:inputType="textPersonName|textVisiblePassword"
+        android:textSize="20sp"
+        android:layout_below="@+id/etemail"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/d3"
+        android:layout_below="@+id/etpass"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@color/Yellow"
+        android:onClick="reg"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="34dp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@color/Yellow"
+        android:onClick="Onlogin"
+        android:text="Log In"
+        android:paddingBottom="8dp"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/signup"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
